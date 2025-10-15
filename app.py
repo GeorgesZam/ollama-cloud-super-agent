@@ -14,7 +14,7 @@ if st.button("Send"):
             response = requests.post(
                 "http://localhost:11434/api/generate",
                 json={
-                    "model": "llama2",
+                    "model": "gpt-oss:20b-cloud",
                     "prompt": user_input,
                     "stream": False
                 }

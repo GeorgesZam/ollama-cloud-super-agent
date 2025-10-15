@@ -26,13 +26,15 @@ curl -fsSL https://ollama.ai/install.sh | sh
 In a terminal, start the Ollama server:
 
 ```bash
+ollama signin
 ollama serve
 ```
+use the **signin** command if you want to use cloud-model whitch i recommand if you just started 
 
 ### 3. Clone the repository
 
 ```bash
-git clone https://github.com/GeorgesZam/ollama-cloud-super-agent.git
+git clone -b ollama-streamlit https://github.com/GeorgesZam/ollama-cloud-super-agent.git
 cd ollama-cloud-super-agent
 ```
 
