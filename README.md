@@ -1,50 +1,73 @@
-# **Ollama Cloud Super Agent**
+# Ollama Cloud Super Agent
 
----
+A super intelligent cloud agent based on Ollama and Streamlit for interaction with local language models.
 
-## **Hello and welcome to my Ollama Super Agent project**
+## Prerequisites
 
----
+- Python 3.8 or higher
+- Ollama installed on your machine
+- Git to clone the repository
 
-### **Ollama has just released their cloud feature**, allowing you to access large models such as **Kimi-K2**, **DeepSeek**, **Qwen**, **GPT-OSS-20B**, and **GPT-OSS-120B**.
+## Installation
 
-This is my personal workstation based on **Streamlit** and the **Ollama library**.  
-It lets you, with no-code or low-code, create **agents** (function calling), **RAG systems**, **automations**, **web search tools**, **codex-like assistants**, and **MCP integrations**.
+### 1. Install Ollama
 
----
+On your personal computer or server, install Ollama:
 
-## **Concept**
+```bash
+# For macOS/Linux
+curl -fsSL https://ollama.ai/install.sh | sh
 
-**ASAP (Agent System Automation Platform)** is a place where you can create your own environment.  
-You can build with **code**, **low-code**, or **no-code**.
+# For Windows, visit: https://ollama.ai/download
+```
 
-When you ask to create an agent to automate a task you’re working on, click **"Copy what I'm doing"**.  
-At that moment, the model will observe everything you’re working on — typing in a Word document, editing an Excel sheet, browsing the web, etc.
+### 2. Start Ollama
 
-When you have completed your task, click **"Stop"**.  
-If the model does not understand the purpose of your actions, it will ask questions to clarify.  
-Once the model correctly understands your workflow, you can click **"Manage and Run"** to supervise it,  
-or click **"Run"** directly if you think it doesn’t need human approval to complete the task.
+In a terminal, start the Ollama server:
 
----
+```bash
+ollama serve
+```
 
-## **Architecture**
+### 3. Clone the repository
 
-Ollama is **compatible with the OpenAI API**, so the project is organized into multiple branches:
+```bash
+git clone https://github.com/GeorgesZam/ollama-cloud-super-agent.git
+cd ollama-cloud-super-agent
+```
 
-- [x] **Ollama branch** — free to use with Ollama Cloud or your personal laptop/server  
-- [ ] **OpenAI API branch**  
-- [ ] **Azure OpenAI branch** — for companies and enterprise setups  
+### 4. Install Python dependencies
 
-Each branch will have two versions:
-- **Tkinter** — for desktop applications  
-- **Streamlit** — to easily share your project on the web or your own server  
+```bash
+pip install -r requirements.txt
+```
 
----
+## Usage
 
-## **Support**
+Launch the Streamlit application:
 
-If you like this project, please give it a **star** and share it.  
-Your support helps me continue improving this open-source project.
+```bash
+streamlit run main.py
+```
 
----
+The application will be accessible at `http://localhost:8501`
+
+## Project Structure
+
+- `main.py` - Main Streamlit application
+- `requirements.txt` - Python dependencies
+- `README.md` - Documentation
+
+## Features
+
+- Intuitive web interface with Streamlit
+- Integration with Ollama for local language models
+- Super intelligent cloud agent for various tasks
+
+## Support
+
+For any questions or issues, feel free to open an issue on GitHub.
+
+
+
+
