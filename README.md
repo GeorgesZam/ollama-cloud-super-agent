@@ -37,7 +37,7 @@ Ollama is **compatible with the OpenAI API**, so the project is organized into m
 - [ ] **Azure OpenAI branch** — for companies and enterprise setups  
 
 Each branch will have two versions:
-- **Ktinker** — for desktop applications  
+- **Tkinter** — for desktop applications  
 - **Streamlit** — to easily share your project on the web or your own server  
 
 ---
